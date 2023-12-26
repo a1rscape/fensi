@@ -1,0 +1,414 @@
+.homeDiv {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    grid-gap: 20px;
+}
+
+.createPanel,
+.editPanel {
+    padding: 20px;
+}
+
+.createPanel {
+    background-color: rgb(53, 51, 51);
+}
+
+.editPanel {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 93%;
+    height: 100vh;
+    border-left: 3px red solid;
+    border-bottom: 3px red solid;
+}
+
+.headerOfView>h1 {
+    color: black;
+    background-color: transparent;
+    margin-left: 44%;
+    padding-bottom: 20px;
+}
+
+.logOut {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    color: #c70000;
+    margin-top: 2px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+
+.createPanel {
+    height: 90vh;
+    position: relative;
+}
+
+.inputQuestion {
+    width: 97%;
+    height: 20vh;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.7s;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.inputQuestion:focus {
+    border-color: #c70000;
+}
+
+.questionHint {
+    font-family: "Arial", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(43, 41, 41);
+    padding: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#dropSpace {
+    background-color: rgb(43, 41, 41);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.optionSelect {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(43, 41, 41);
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: white;
+    margin-top: 20px;
+}
+
+.optBtnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(43, 41, 41);
+}
+
+.optionSelect>h2 {
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    background-color: rgb(43, 41, 41);
+    margin-top: 10px;
+}
+
+.bouncy {
+    animation: bouncy 5s infinite linear;
+    position: relative;
+}
+
+@keyframes bouncy {
+    0% {
+        top: 0em
+    }
+
+    40% {
+        top: 0em
+    }
+
+    43% {
+        top: -0.9em
+    }
+
+    46% {
+        top: 0em
+    }
+
+    48% {
+        top: -0.4em
+    }
+
+    50% {
+        top: 0em
+    }
+
+    100% {
+        top: 0em;
+    }
+}
+
+.optionsBtn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 61, 61);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.optionsBtn:hover {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 30px 5px rgba(236, 0, 0, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.optionsBtn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.optionsBtn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.optionsBtn:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.confirmBtn {
+    margin-left: 43%;
+    margin-top: 30px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 61, 61);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.confirmBtn:hover {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 30px 5px rgba(236, 0, 0, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.confirmBtn:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.confirmBtn::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.confirmBtn:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.inView {
+    background-color: transparent;
+}
+
+.headerOfView {
+    background-color: transparent;
+    display: flex;
+}
+
+.formMail {
+    background-color: transparent;
+    margin-top: 135%;
+}
+
+.mailBtn {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    margin-left: 220px;
+    margin-bottom: 30px;
+}
+
+@media screen and (900px <=width <=1440px) {
+    .logOut {
+        width: 300px;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    .editPanel {
+        width: 92%;
+    }
+}
+
+@media screen and (900px <=width <=1200px) {
+    .inputQuestion {
+        width: 95%;
+    }
+
+    .confirmBtn {
+        right: 6%;
+        width: 29%;
+    }
+}
+
+@media screen and (430px <=width <=899px) {
+    .homeDiv {
+        display: block;
+    }
+
+    .createPanel {
+        width: 96%;
+    }
+
+    .inputQuestion {
+        width: 97%;
+    }
+
+    .confirmBtn {
+        right: 6%;
+        width: 32%;
+        margin-top: 30px;
+    }
+
+    .headerOfView {
+        margin-bottom: 80px;
+    }
+
+    .optionsBtn {
+        width: 40%;
+    }
+
+    .logOut {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    .editPanel {
+        margin-top: 25%;
+        width: 96%;
+    }
+}
+
+@media screen and (900px <=width <=1000px) {
+    .optionsBtn {
+        width: 40%;
+    }
+}
+
+@media screen and (280px <=width <=439px) {
+    .homeDiv {
+        display: block;
+    }
+
+    .logOut {
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    .optionsBtn {
+        width: 40%;
+    }
+
+    .confirmBtn {
+        right: 14%;
+        width: 45%;
+    }
+
+    .inputQuestion {
+        width: 93%;
+    }
+
+    .createPanel {
+        width: 103%;
+    }
+
+    .editPanel {
+        margin-top: 150px;
+        width: 102%;
+    }
+}

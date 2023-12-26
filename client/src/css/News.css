@@ -1,0 +1,31 @@
+.newsDiv {
+    margin: auto;
+}
+
+.text {
+    font-family: "Arial", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(43, 41, 41);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.container-news {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 900px;
+    margin: auto;
+}
+
+@media screen and (200px <=width <=1220px) {
+    .container-news {
+        width: 80%;
+        margin: auto;
+    }
+
+    .text {
+        width: 60%;
+    }
+}

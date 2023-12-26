@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(53, 51, 51);
+}
+
+.headerParentDiv {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(43, 41, 41);
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeLogo {
+    width: 10%;
+    height: 100%;
+    background-color: rgb(43, 41, 41);
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homeLogo img {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 30%;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(43, 41, 41);
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(43, 41, 41);
+}
+
+.bag {
+    background-color: rgb(43, 41, 41);
+}
+
+header p {
+    background-color: rgb(43, 41, 41);
+}
+
+@media screen and (440px <=width <=1220px) {
+    .homeLogo {
+        width: 110px;
+        height: 70px;
+    }
+
+    header {
+        width: 150px;
+    }
+
+    .headerParentDiv {
+        width: 102%;
+    }
+}
+
+@media screen and (280px <=width <=399px) {
+    .homeLogo {
+        width: 110px;
+        height: 70px;
+    }
+
+    header {
+        width: 170px;
+    }
+
+    .headerParentDiv {
+        width: 115%;
+    }
+}
+
+@media screen and (400px <=width <=439px) {
+    .homeLogo {
+        width: 110px;
+        height: 70px;
+    }
+
+    header {
+        width: 130px;
+    }
+
+    .headerParentDiv {
+        width: 112%;
+    }
+}

@@ -1,0 +1,223 @@
+.login-form-container {
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.input-container {
+    margin: 10px 0;
+    border: 1px solid #33ff00;
+    border-radius: 5px;
+    padding: 15px;
+    transition: border-color 0.3s;
+}
+
+.input-container.empty {
+    border-color: red;
+}
+
+.inputsLogin {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.submit {
+    margin-top: 8px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 61, 61);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 30px 5px rgba(236, 0, 0, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.submit:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.submit::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.submit:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.error {
+    color: red;
+    padding-top: 8px;
+    font-size: 12px;
+}
+
+.eye {
+    position: relative;
+    color: #999;
+    width: 20px;
+    height: 20px;
+    margin-left: 330px;
+    cursor: pointer;
+    bottom: 15px;
+}
+
+.option {
+    color: white;
+    position: absolute;
+    margin-bottom: 25%;
+}
+
+.row {
+    position: absolute;
+    margin-bottom: 500px;
+    display: flex;
+}
+
+.active {
+    padding: 8px;
+    height: 30px;
+    width: 100px;
+    border: 2px solid #c70000;
+    cursor: pointer;
+    color: white;
+}
+
+.inactive {
+    padding: 8px;
+    padding-top: 10px;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (280px <=width <=300px) {
+    .row {
+        margin: auto;
+        margin-bottom: 170px;
+    }
+
+    .option {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .allContainer {
+        margin: auto;
+        margin-top: 130px;
+        height: 60px;
+
+    }
+}
+
+@media screen and (301px <=width <=399px) {
+    .row {
+        margin: auto;
+        margin-bottom: 170px;
+    }
+
+    .option {
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .allContainer {
+        margin: auto;
+        margin-top: 130px;
+        height: 60px;
+
+    }
+}
+
+@media screen and (400px <=width <=439px) {
+    .allContainer {
+        margin-top: 130px;
+        height: 60px;
+        width: 100%
+    }
+
+    .row {
+        margin-top: 170px;
+    }
+
+    .option {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (440px <=width <=1820px) {
+    .row {
+        margin-bottom: 170px;
+    }
+
+    .option {
+        margin-bottom: 40px;
+    }
+
+    .allContainer {
+        margin-top: 130px;
+        height: 60px;
+    }
+
+    .submit {
+        margin-bottom: 50px;
+    }
+}
